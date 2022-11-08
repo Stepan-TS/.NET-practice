@@ -1,14 +1,25 @@
-﻿int scoreOfUser = 0;
+﻿using System.Text;
+
+int scoreOfUser = 0;
 int scoreOfComputer = 0;
 int quite = 5;
 
-Console.WriteLine("Hello!" + "\n"
-    + "Let's play a game!" + "\n"
-    + "You have 3 options available('rock','paper','scissors')" 
-    + "\n" + "You can choose one of them!"
-    + "\n" + "If you want to over this game, enter 'end' please!");
+//Console.WriteLine("Hello!" + "\n"
+//    + "Let's play a game!" + "\n"
+//    + "You have 3 options available('rock','paper','scissors')" 
+//    + "\n" + "You can choose one of them!"
+//    + "\n" + "If you want to over this game, enter 'end' please!");
 
-while (scoreOfUser < quite && scoreOfComputer < quite)
+StringBuilder builder = new StringBuilder();
+builder.AppendLine("Hello!")
+    .AppendLine("Let's play a game!")
+    .AppendLine("You have 3 options available('rock','paper','scissors')")
+    .AppendLine("You can choose one of them!")
+    .AppendLine("If you want to over this game, enter 'end' please!");
+string message = builder.ToString();
+Console.WriteLine(message);
+
+while (true)
 {
     string value = Console.ReadLine();
 

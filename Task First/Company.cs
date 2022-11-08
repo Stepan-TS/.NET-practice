@@ -15,10 +15,10 @@ namespace Task_First
             Director = director;
             NumberOfEmployees = numberOfEmployees;
         }
+        
         public string Name { get;  }
         public Address Address { get; set; }
         public Person Director { get; set; }
-
         public int NumberOfEmployees { get; set; }
 
 
@@ -31,14 +31,15 @@ namespace Task_First
         {
             Director = newDirector;   
         }
+       
         public void Hire(Person newPerson)
         {
-             NumberOfEmployees = NumberOfEmployees+1;
+            NumberOfEmployees++;
+            
             if(newPerson.JobTitle == "director")
             {
                 Director = newPerson;
             }
         }
-
     }
 }

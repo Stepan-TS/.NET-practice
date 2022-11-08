@@ -26,6 +26,5 @@ namespace Task_First
         {
             return (Country + ";" + City + ";" + Street + ";" + BuildingNumber + ";" + PostalCode);
         }
-
     }
 }

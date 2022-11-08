@@ -20,13 +20,11 @@ while (scoreOfUser < quite && scoreOfComputer < quite)
         {
             scoreOfUser++;
             Console.WriteLine("Congratulations, you won!Let's try again");
-            
         }
         else if(value == "scissors")
         {
             scoreOfComputer++;
             Console.WriteLine("You lost! Let's try again!");
-            
         }
         else if(value == "end")
         {

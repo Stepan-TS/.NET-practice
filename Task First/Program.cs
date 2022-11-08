@@ -2,8 +2,6 @@
 using System.Security.Cryptography.X509Certificates;
 using Task_First;
 
-
-
 public class Test
 {
     static void Main()
@@ -14,8 +12,7 @@ public class Test
         myPerson.ChangeAddress(newAddress);
         Console.WriteLine(myPerson.DisplayPersonalInfo());
     
-
-
+        
         var addressOfCompany = new Address("Country3", "City3", "Street3", 3, 33333);
         var addressOfDirector = new Address("Country4", "City4", "Street4", 4, 44444);
         var informationOfDirector = new Person("Director", "DirectorFirst", 25, addressOfDirector, "director");

@@ -20,10 +20,7 @@ namespace Task_First
             Age = age;
             JobTitle = jobTitle;
             Address = address;
-
         }
-
-        
 
         public string FirstName { get; }
         public string LastName { get; }
@@ -36,6 +33,7 @@ namespace Task_First
         {
             return ("FirstName: " + FirstName + ";\n" + "LastName: " + LastName + ";\n" + "Age: " + Age + ";\n" + Address.GetAddress() + ";\n" + "JobTitle: " + JobTitle);
         }
+        
         public void ChangeAddress(Address newAddress)
         {
             Address = newAddress;
